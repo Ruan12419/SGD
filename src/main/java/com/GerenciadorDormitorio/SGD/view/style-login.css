@@ -1,0 +1,95 @@
+body {
+    background-color: #aaa;
+    color: white;
+    background: no-repeat;
+}
+
+#header-div {
+    background-color: black;
+    margin-bottom: 1em;
+    margin-top: -1em;
+    margin-left: -1em;
+    margin-right: -0.25em;
+    padding: 2em;
+    padding-bottom: 0em;
+
+    font-size: 2em;
+
+    box-shadow: 0px 10px 27px 2px rgb(255 255 255);
+}
+header {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: Roboto, sans-serif;
+    text-shadow: 0.1em 0.08em 0.07em blue;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#btn-home {
+    background-color: steelblue;
+}
+
+#content-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2em;
+
+}
+
+form {
+    background-color: blueviolet;
+    height: max-content;
+    width: min-content;
+    padding: 2em;
+    padding-top: 3em;
+    padding-left: 2em;
+    padding-right: 0.8em;
+    border-radius: 1em;
+    border-top-left-radius: 0em;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    color: black;
+    font-size: xx-large; 
+
+    box-shadow: 5px 13px 27px 4px black;
+}
+
+.input {
+    margin: 2em;
+    margin-left: 0em;
+    height: 2em;
+    width: 25em;
+    border-radius: 2em;
+    border-color:coral;
+
+    color: black;
+    font-size: 23px;
+    text-align: center;
+}
+
+button {
+    height: 2em;
+    width: 6em;
+    margin-left: 30%;
+    margin-top: 5%;
+    border-radius: 0.7em;
+    border-top-left-radius: 0em;
+
+    color: blue;
+    background-color: rgb(127, 224, 211);
+
+    font-size: 1em;
+}

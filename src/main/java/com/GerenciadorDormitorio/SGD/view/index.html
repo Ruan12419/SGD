@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Dormitório</title>
+    <script type="module" src="JS.js" charset="utf-8"></script>
+    <script type="module" src="JS-login.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url('SGD-background-neon.jpg');">
+  <header>
+    <h1 class="header" > Gerenciador de Dormitório </h1>
+    
+  </header>
+  <nav>
+    <div id="btn-login">
+      <button id="login-btn"><a href="login.html"> Login </a></button>
+      <button id="sobre-btn"><a href="sobre.html"> Sobre </a>  </button>
+    </div>
+  </nav>
+  
+  <content>
+    
+    <br/>
+    <div id="formEnv">
+      <h2>Preencha seus dados para alugar um quarto </h2>
+      <form action="---" method="post" id="formPost">
+        <label for="alunocpf"> CPF </label>
+        <input type="text" name="alunoCPF" id="alunocpf" placeholder="Digite seu CPF..."/>
+        <label for="alunonome"> NOME </label>
+        <input type="text" name="alunoNome" id="alunonome" placeholder="Digite o seu nome..."/>
+        <label for="alunocurso"> CURSO </label>
+        <input type="text" name="alunoCurso" id="alunocurso" placeholder="Digite o nome do seu curso... "/>
+        <label for="timetoexpirate"> TEMPO DE ESTADIA </label>
+        <input type="text" name="timeToExpirate" id="timetoexpirate" placeholder="Digite quanto tempo você ficará no quarto..."/> 
+        <label for="quarto-disponivel"> NUMERO DO QUARTO </label>
+        <select id="quarto-disponivel" name="seleciona-quarto">
+          <option value=""><label> Selecione um quarto... </label></option>
+        </select>
+        <button type="button" class="botao" onclick="enviarForm()" onmouseover="mudaCorBtn()" onmouseout="voltaCor()"> ENVIAR </button>
+    </form><br/>
+    </div>
+    <form action="---" method="get" id="formGet">
+        <br/>
+        <br/>
+        <button type="button" id="btn-receber" onclick="receberForm()" style=" margin-left: 45%;" > RECEBER </button>
+    </form>
+    <table id="tabela" style="display: contents;">
+      <tr>
+      </tr>
+    </table>
+  </content>
+</body>
+</html>
